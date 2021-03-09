@@ -1,0 +1,20 @@
+include header
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header
+        
+    div(class='content_container container featured ')
+      div(class='row ')
+        include slider
+        div.col.col-lg-12.dv_404
+          
+            .hit-the-floor <div class='large_text_404'>ERROR</div> 404 <div class='small_text_404'>Not Found</div>
+            p(class='p_404') Товар с таким названием не найден, вернитесь <a href='/' class='a-404'>назад </a>и попробуйте снова ^_^
+
+    include nav.pug
+include footer.pug
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+script(src='/js/main.js')
+script(src='/js/nav.js')

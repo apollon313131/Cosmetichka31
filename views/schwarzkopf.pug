@@ -1,0 +1,19 @@
+
+include header   
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header
+
+    div(class='container content_container') 
+      div(class='row') 
+        div(class='col col-md-12 title_goods')
+          h2.title_search_tags Schwarzkopf
+        h6.text_search_tags Schwarzkopf - немецкий бренд, который занимается уже более 120 лет разработкой средств для волос, на сегодняшний день - это символ качественных и уникальных продуктов, разработанных вместе с командой профессионалов.
+        each val, index in sch
+          include card.pug
+        
+
+    include nav.pug
+include footer.pug

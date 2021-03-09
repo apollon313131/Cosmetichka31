@@ -1,0 +1,20 @@
+
+include header   
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header
+
+    div(class='container content_container') 
+      div(class='row') 
+        div(class='col col-md-12 title_goods')
+          h2.title_search_tags Estel 
+        h6.text_search_tags Estel Professional («Эстель Профессионал») — молодой динамично развивающийся косметический бренд родом из России, начавший свою деятельность, как компания ООО «Юникосметик». За довольно скромный срок своего существования Estel Professional завоевала львиную долю Российского рынка и успела приглянуться многим жителям стран СНГ.
+        each val, index in est
+          include card.pug
+        
+
+    include nav.pug
+include footer.pug
+

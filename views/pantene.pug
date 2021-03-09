@@ -1,0 +1,19 @@
+
+include header   
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header
+
+    div(class='container content_container') 
+      div(class='row') 
+        div(class='col col-md-12 title_goods')
+          h2.title_search_tags Pantene
+        h6.text_search_tags Бренд Pantene родился в 1947 году в лабораториях швейцарской фармацевтической компании Hoffman – La Roche. Тогда шампунь назывался просто Pantene (без Pro-V), и его название отражало тот факт, что в состав продукта входит пантенол (провитамин B5, pantenol).
+        each val, index in pan
+          include card.pug
+        
+
+    include nav.pug
+include footer.pug

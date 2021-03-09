@@ -1,0 +1,31 @@
+{
+  "name": "node_lite_shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bluebird": "^3.3.3",
+    "body-parser": "^1.15.0",
+    "bootstrap": "^5.0.0-alpha3",
+    "cookie": "^0.4.1",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "jsdom": "^16.4.0",
+    "mustard-ui": "^1.0.4",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.4.16",
+    "nodemon": "^2.0.6",
+    "pagination": "^0.4.6",
+    "pug": "^2.0.4",
+    "request": "^2.88.2",
+    "sweetalert2": "^9.17.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

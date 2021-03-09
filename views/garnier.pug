@@ -1,0 +1,19 @@
+
+include header   
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header
+
+    div(class='container content_container') 
+      div(class='row') 
+        div(class='col col-md-12 title_goods')
+          h2.title_search_tags Garnier
+        h6.text_search_tags Garnier - французский косметический бренд по производству уходовых средств, принадлежащая компании L'Oréal.
+        each val, index in gar
+          include card.pug
+        
+
+    include nav.pug
+include footer.pug

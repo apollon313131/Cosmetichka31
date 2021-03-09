@@ -1,0 +1,19 @@
+
+include header   
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header
+
+    div(class='container content_container') 
+      div(class='row') 
+        div(class='col col-md-12 title_goods')
+          h2.title_search_tags Lux Visage
+        h6.text_search_tags ООО ЛЮКС-ВИЗАЖ – ведущий белорусский производитель декоративной косметики. LUXVISAGE предлагает более 500 наименований декоративной косметики: губная помада, блеск, тушь для ресниц, тональные крема, тени и пудру, лаки для ногтей.
+        each val, index in lux
+          include card.pug
+        
+
+    include nav.pug
+include footer.pug

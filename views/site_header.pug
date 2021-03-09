@@ -1,0 +1,62 @@
+script(src='https://kit.fontawesome.com/a076d05399.js')
+div(class='container full-width')
+  div(class='row header_row')
+    div(class='col')
+    div(class='site-name col col-lg-12 col-md-12')
+      .header_title
+        //- a(href="/")
+        //- input(type='text' class='input input-search' placeholder='Введите имя товара')
+        .span_title
+          span 
+            | г.Шебекино, ул.Московская 16А(2 Этаж) <br>
+            //- | <br>
+            a.url_top_a(href='https://www.instagram.com/cosmetichka_shebekino/')  @cosmetichka_shebekino <br>
+            |  cosmetichka_shebekino@yandex.ru
+          //- span Бесплатная доставка по г.Шебекино от 1500 рублей.
+        a.a_index(href='/')
+          img(src="../images/logo7.png", alt="", class='graficlogo')
+        div(class='search')
+          //- button(class='show-nav menu_button ') Категории <i class='fas fa-bars'></i>
+          button.btn.btn-info.btn_order_head(type='button', data-toggle='modal', data-target='#exampleModal')
+            span(class='button-text-basket') 
+              
+                i(class='fas fa-shopping-cart cart_img') 
+                span(class='button-text' id='cart-nav-title') 
+          #exampleModal.modal.fade(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')
+            .modal-dialog.modal-dialog-scrollable.modal-dialog-centered 
+              .modal-content
+                .modal-header
+                  //- h5#exampleModalLabel.modal-title Корзина
+                  //- button.btn.btn-secondary(type='button', data-dismiss='modal button-primary-text but-pre') Закрыть
+                  a(
+                      class='order_button'
+                      href='/order'
+                      target='_blank'
+                  ) 
+                    button.btn.btn-primary.btn_order_head(type='button') Оформить заказ
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') &times;
+                .modal-body
+                    div(class='table_order2 one_section_table ')
+                    div(id='cart-nav-preview')
+                .modal-footer
+                  button.close(type='button', data-dismiss='modal' aria-label='Close') Закрыть
+                  a(
+                     class='order_button'
+                     href='/order'
+                     target='_blank'
+                  ) 
+                    button.btn.btn-primary.btn_order_head(type='button') Оформить заказ
+
+
+            
+  include menu-header
+  
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+script(src='/js/main.js')
+script(src='/js/mod.js')
+script(src='/js/new.js')
+script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo', crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js', integrity='sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/', crossorigin='anonymous')
+
+                  

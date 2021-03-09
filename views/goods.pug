@@ -1,0 +1,44 @@
+include header
+
+div(class='wrap')
+  div(class='content')
+    header(class='site-header')
+      include site_header
+        
+    div(class='container')
+      input.btn_back(type="button" onclick='history.back();' value='НАЗАД')
+      div(class='row')
+        div(class='col col-md-12')
+            h2(class="panel-title") #{goods[0]['name']}
+        div(class="col col-md-4")
+            img(
+                src="/images/"+goods[0]['image']
+                class="goods-big-image card-preview"
+            )
+        div(class="col col-md-8 ")
+            p.text-goods #{goods[0]['description']}
+            //- Наличие
+            p.text-goods.text_nal #{goods[0]['availability']} 
+            
+
+           
+    
+            .div-price
+              span(class="success") Цена: #{goods[0]['cost'].toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$& ')} Руб
+              button(
+                  class="button-success add-to-cart"
+                  data-goods_id=goods[0]['id']
+              ) Купить  
+            //- button#myBtn &Ocy;&tcy;&kcy;&rcy;&ycy;&tcy;&softcy; &ocy;&kcy;&ncy;&ocy;
+
+   
+         
+    include nav
+  include footer
+
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+script(src='/js/main.js')
+script(src='/js/new.js')
+script(src='/js/mod.js')
+
+

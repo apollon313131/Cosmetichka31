@@ -1,0 +1,19 @@
+
+include header   
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header
+
+    div(class='container content_container') 
+      div(class='row') 
+        div(class='col col-md-12 title_goods')
+          h2.title_search_tags RELOUIS
+        h6.text_search_tags Relouis — белорусский косметический бренд, специализирующийся на производстве декоративной косметики, косметической продукции для ногтей, а также аксессуаров. Производственные мощности и главный офис компании расположены в городе Минск.
+        each val, index in rel
+          include card.pug
+        div #{rel[0]['description']}
+
+    include nav.pug
+include footer.pug

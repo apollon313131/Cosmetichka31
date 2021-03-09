@@ -1,0 +1,18 @@
+
+include header   
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header
+
+    div(class='container content_container') 
+      div(class='row') 
+        div(class='col col-md-12 title_goods')
+          h2.title_search_tags Белорусская косметика
+        each val, index in belorus
+          include card.pug
+        
+
+    include nav.pug
+include footer.pug

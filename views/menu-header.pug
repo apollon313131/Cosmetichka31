@@ -1,0 +1,156 @@
+//- nav#nav_menu_hide(class='nav_head')
+//-     div.menu_click 
+//-         .menu-btn 
+//-             .menu-btn__burger 
+//-         p.menu_name Меню
+
+//-     ul.ul_top
+//-         li.li_top_1
+//-             a(href='/') Главная     
+//-         li.li_top_1
+//-             a(href='#') Волосы
+//-                 i(class='fa fa-sort-down')
+//-             ul.ul2
+//-                 li
+//-                     a(href='/cat?id=22') Шампуни
+//-                 li
+//-                     a(href='/cat?id=23') Кондиционеры
+//-                 li
+//-                     a(href='/cat?id=4') Бальзамы
+//-                 li
+//-                     a(href='/cat?id=15') Окрашивание
+//-                 li
+//-                     a(href='/cat?id=15') Оттеночные шампуни и бальзамы
+//-         li.li_top_1
+//-             a(href='#') Макияж
+//-                 i(class='fa fa-sort-down')
+//-             ul.ul2
+//-                 li
+//-                     a(href='/cat?id=13') Тональные ср-ва
+//-                 li
+//-                     a(href='/cat?id=1') Тушь
+//-                 li
+//-                     a(href='/cat?id=10') Тени
+//-                 li
+//-                     a(href='/cat?id=24') Помада
+//-                 li
+//-                     a(href='/cat?id=21') Блеск
+//-                 li
+//-                     a(href='/cat?id=20') Лак для ногтей
+//-         li.li_top_1
+//-             a(href='#') Парфюмерия
+//-                 i(class='fa fa-sort-down')
+//-             ul.ul2
+//-                 li
+//-                     a(href='/cat?id=17') Женская парфюмерия
+//-                 li
+//-                     a(href='/cat?id=16') Мужская парфюмерия
+//-                 li
+//-                     a(href='/cat?id=18') Детская парфюмерия
+//-                 li
+//-                     a(href='/cat?id=19') Подарочные наборы
+//-         li.li_top_1
+//-             a(href='#') Доставка
+//-         li.li_top_1
+//-             a(href='#') Оплата
+//-         li.li_top_1
+//-             a(href='#') О нас
+
+//- script(src='/js/new.js')
+.display-flex
+nav(class='navbar sticky-top navbar-expand-lg navbar-light bg-light navbar-fixed-top')
+    .container.hhhhhhh
+       a(class="navbar-brand nav_hidd" href="#") Меню   
+        button(
+            onclick = ''
+            class='navbar-toggler but_ton' 
+            type='button' 
+            data-toggle = 'collapse' 
+            data-target = '#navbarContent' 
+            aria-controls = 'navbarContent' 
+            aria-expanded = 'false'
+           
+        )
+            span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarContent
+            ul.navbar-nav.mr-auto.mb-2
+                li.nav-item
+                    a.nav-link(href='/') Главная
+                li.nav-item.dropdown
+                    a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-expanded='false')
+                        | Волосы
+                    ul.dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                        li
+                            a.dropdown-item(href='/cat?id=22') Шампуни
+                        li
+                            a.dropdown-item(href='#') Кондиционеры
+                        li
+                            a.dropdown-item(href='/cat?id=4') Бальзамы
+                        li
+                            a.dropdown-item(href='#') Окрашивание
+                        li
+                            a.dropdown-item(href='#') Оттеночные шампуни и бальзамы
+                li.nav-item.dropdown
+                    a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-expanded='false')
+                        | Макияж
+                    // Dropdown menu
+                    ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                        li
+                            a.dropdown-item(href='#') Тональные ср-ва
+                        li
+                            a.dropdown-item(href='/cat?id=1') Тушь
+                        li
+                            a.dropdown-item(href='#') Тени
+                        li
+                            a.dropdown-item(href='/cat?id=3') Подводка для глаз
+                        li
+                            a.dropdown-item(href='#') Помада
+                        li
+                            a.dropdown-item(href='#') Блеск
+                        li
+                            a.dropdown-item(href='#') Лак для ногтей
+                li.nav-item.dropdown
+                    a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-expanded='false')
+                        | Парфюмерия
+                    // Dropdown menu
+                    ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                        li
+                            a.dropdown-item(href='#') Женская парфюмерия
+                        li
+                            a.dropdown-item(href='#') Мужская парфюмерия
+                        li
+                            a.dropdown-item(href='#') Детская парфюмерия
+                        li
+                            a.dropdown-item(href='#') Подарочные наборы
+                li.nav-item.dropdown
+                    a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-expanded='false')
+                        | Тело
+                    // Dropdown menu
+                    ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                        li
+                            a.dropdown-item(href='#') Гели для душа
+                        li
+                            a.dropdown-item(href='#') Мыло
+                        li
+                            a.dropdown-item(href='#') Кремы
+                        li
+                            a.dropdown-item(href='#') Скрабы и пилинги
+                        li
+                            a.dropdown-item(href='#') Дезодоранты
+                        li
+                            a.dropdown-item(href='#') Депиляция
+                        li
+                            a.dropdown-item(href='#') Загар и защита от солнца
+                        li
+                            a.dropdown-item(href='#') Соль для ванны
+                        li
+                            a.dropdown-item(href='#') Мочалки
+                        li
+                            a.dropdown-item(href='#') Пена для ванны
+
+
+
+
+
+
+

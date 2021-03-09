@@ -1,0 +1,23 @@
+//- form(method='GET')
+//-   input(type='text', name='keyword', placeholder='Search')
+
+
+include header   
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header
+    div(class='container content_container conteiner_search') 
+      div(class='row') 
+        input.btn_back.btn_back_search(type="button" onclick='history.back();' value='НАЗАД')
+        div(class='col col-md-12 title_goods search_goods_title')
+          .jc-search
+            h2.h2_search Результаты поиска: 
+            h2.h2_search-right #{keyw}
+        each val, index in search
+            include card.pug
+        div #{search['description']}
+
+    include nav.pug
+include footer.pug

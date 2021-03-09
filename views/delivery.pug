@@ -1,0 +1,25 @@
+include header
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header.pug
+
+    div(class='container content_container')
+    
+      div(class='row')
+        div(class='col col-md-12 align-center mt-5 contacts_p') 
+            p.font_p Доставка
+            div.delivery
+              P Самовывоз из магазина
+              div.delivery__two
+                p Шебекино
+                p Адрес магазина: Белгородская область, г.Шебекино, ул. Московская 16А
+              div.delivery__two
+                p Белгород
+                p Адрес выдачи: Белгородская область, 41 мкрн Новосадовый, ул.Майская д.8
+        div(class='col col-md-5 map_ya mt-2')
+    include nav.pug
+include footer.pug
+  script(src='/js/order.js')
+  script(src='/js/main.js')

@@ -1,0 +1,19 @@
+
+include header   
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header
+
+    div(class='container content_container') 
+      div(class='row') 
+        div(class='col col-md-12 title_goods')
+          h2.title_search_tags Eveline
+        h6.text_search_tags Косметические средства бренда Eveline Cosmetics широко известны по всему миру. Они строго соответствуют лозунгу компании «Высокое качество по низкой цене». Ассортимент косметики Эвелин представлен более чем 700 различными продуктами, помогающими потребителям сохранять естественную красоту и молодость кожи и подчеркивать ее достоинства.
+        each val, index in eveli
+          include card.pug
+        
+
+    include nav.pug
+include footer.pug

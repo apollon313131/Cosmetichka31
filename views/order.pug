@@ -1,0 +1,75 @@
+include header
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header.pug
+
+    div(class='container content_container')
+    
+      div(class='row')
+        div(class='col col-md-12') 
+          form(action='#ya1' class='form_order')
+            button(class='scroll-to', type='submit', href="#ya1" class='scroll-to') Перейти к оформлению заказа
+          div(class='order_info')
+            h4(id='h4_order') 
+          h3(class="cart-header") Корзина
+          div(id='cart-nav' class='order_table_mobile') 
+        div(class='col col-md-12')
+          div(id="ya1")
+          h3.cart-header Оформление заказа 
+        .box-order
+        div(class='col col-md-6 ord_tabl')
+          form#lite-shop-order(action="")
+                  div(class='form-control')
+                    label(for='username') Имя
+                    input(
+                        type='text',
+                        id='username',
+                        placeholder='Введите ваше имя',
+                        )
+                  div(class='form-control')
+                    label(for='phone') Телефон
+                    input(
+                        type='text',
+                        id='phone',
+                        placeholder='Номер телефона',
+                        )
+                  div(class='form-control')
+                    label(for='social') Instagram или VK
+                    input(
+                        type='text',
+                        id='social',
+                        placeholder='Ссылка на вашу соц.сеть для связи',
+                        )
+                  div(class='form-control')
+                    label(for='email') Email
+                    input(
+                        type='text',
+                        id='email',
+                        placeholder='Введите вашу электронную почту',
+                        )
+                  div(class='form-control')
+                    label(for='address') Адрес доставки (При самовывозе - указать)
+                    textarea(
+                        id='address',
+                        placeholder='Введите адрес доставки',
+                        )
+                  div(class='form-control')
+                    label(for='rule') 
+                      input(
+                          type='checkbox',
+                          id='rule',
+                          value='1'
+                          ) 
+                      span  С правилами ознакомлен(а)
+                  div(class='form-control text-right')
+                    button(class='button-primary',id='button_order', type='submit', onclick='') Отправить заказ менеджеру
+                    button(class='remove-order', type='button') Очистить  
+        div(class='col col-md-6 map_ya')
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A93cc95636bc4cf917200953619de57b3ccb2fe2e86cf96d15f2028fa67469b47&amp;width=100%auto&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+    include nav.pug
+include footer.pug
+  script(src='/js/order.js')
+  script(src='/js/main.js')
+

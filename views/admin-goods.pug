@@ -1,0 +1,38 @@
+include header
+input.btn_back(type="button" onclick='history.back();' value='НАЗАД')
+div(class='align-center')
+    h2 Товары - Изменение - Удаление - Остатки
+        h1 Список товаров
+        p
+            a(href='/create', class='href_admin') Добавить товар
+        input(
+            class='form-control'
+            type='text'
+            placeholder='Введите название или цену'
+            id='search-text'
+            onkeyup='tableSearch()'
+        )
+        div.d-flex.justify-content-center
+            table(class='table-3 table table-hover' id='info-table')
+                thead
+                    tr.overflow-hidden
+                        th Название
+                        th Цена
+                        th Наличие
+                        th Изменить
+                        //- th Удалить
+                each val, index in goods_admin
+                    tr
+                        td #{val['name']}
+                        td #{val['cost']}
+                        td #{val['availability']}
+                        td 
+                            a(href='/edit/'+ val['id']) Изменить
+                            
+                        //- td 
+                        //-     form(action='delete/'+val['id'], method='POST', style='display:inline;')
+                        //-         input(type='submit', value='Удалить')
+
+script(src='/js/admin_goods.js')
+            
+    

@@ -1,0 +1,18 @@
+div(class='col col-lg-3 col-md-3 col-sm-6 col-xs-12 index_card ')
+    div(class='card animated fadeIn')
+        a(href="goods/"+val['slug'] class='a_href_price')
+            h6(class='card-title text-center card-text-preview') #{val['name']}
+            figure.zoom 
+            img(
+                src='images/'+val['image']
+                class='card-images card-preview'
+            ) 
+            p(class='text-center price_text') #{val['cost'].toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$& ')} Руб
+        //- ul(class='card-actions')
+        //-     li
+        //-         button(
+        //-         data-goods_id = val['id']
+        //-         class='button button-primary add-to-cart'
+                
+        //-         ) Купить 
+                //- p(class='text-center price_text') #{val['cost'].toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$& ')} Руб

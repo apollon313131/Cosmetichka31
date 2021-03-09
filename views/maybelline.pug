@@ -1,0 +1,20 @@
+
+include header   
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header
+
+    div(class='container content_container') 
+      div(class='row') 
+        div(class='col col-md-12 title_goods')
+          //- h2 #{may[0]['name']}
+          h2.title_search_tags Maybelline
+        h6.text_search_tags Maybelline New York — один из наиболее популярных брендов декоративной косметики в России. Его популярность, кроме прочих факторов, обусловлена идеальным сочетанием качества реализуемой продукции и цены на нее. Основная задача бренда — поддерживать женщин на их жизненном пути.
+        each val, index in may
+          include card.pug
+        
+
+    include nav.pug
+include footer.pug

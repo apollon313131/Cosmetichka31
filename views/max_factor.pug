@@ -1,0 +1,19 @@
+
+include header   
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header
+
+    div(class='container content_container') 
+      div(class='row') 
+        div(class='col col-md-12 title_goods')
+          h2.title_search_tags Max Factor
+        h6.text_search_tags Max Factor (рус. Макс Фактор) – американский бренд, специализирующийся на производстве декоративной косметики. Марка основана в 1909 году Максом Фактором. Визажист первым озвучил принцип «Цветовой гармонии», согласно которому косметические средства должны соответствовать тону и типу кожи, оттенку волос, цвету глаз. В настоящее время компания Max Factor входит в состав корпорации Procter & Gamble.
+        each val, index in maxF
+          include card.pug
+        
+
+    include nav.pug
+include footer.pug

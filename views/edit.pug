@@ -1,0 +1,59 @@
+include header
+input.btn_back(type="button" onclick='history.back();' value='НАЗАД')
+div(class='content_container mt-5 align-center')
+    h1 Редактирование товара
+        form(method='POST', action='/edit')
+            each val, index in edit
+                br
+                input.field(
+                    type='hidden'
+                    name='id'
+                    value=val['id']
+                    
+                )
+                label.label_name Сокращение
+                input.field(
+                    type='varchar'
+                    name='slug'
+                    value=val['slug']
+                    class='form-control form-control-lg'
+                )
+                label.label_name Название
+                input.field(
+                    type='varchar'
+                    name='name'
+                    class='field form-control form-control-lg'
+                    value=val['name']
+                )
+                label.label_name Описание
+                input.field(
+                    type='text'
+                    name='description'
+                    value=val['description']
+                    class='field form-control form-control-lg'
+                )
+                label.label_name Цена
+                input.field(
+                    type='double'
+                    name='cost'
+                    value=val['cost']
+                    class='field form-control form-control-lg'
+                )
+                label.label_name Категория
+                input.field(
+                    type='int'
+                    name='category'
+                    value=val['category']
+                    class='field form-control form-control-lg'
+                )
+                label.label_name Наличие
+                input.field(
+                    type='int'
+                    name='availability'
+                    value=val['availability']
+                    class='field form-control form-control-lg'
+                )
+                input(type='submit', value='Отправить')
+        a(
+            href='../admin-goods'
+        ) К списку товаров

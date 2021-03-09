@@ -1,0 +1,24 @@
+include header   
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header
+       
+    div(class='container content_container') 
+      div(class='row') 
+        div(class='col col-md-12 title_goods')
+        //- include slider
+        select#select(name="name")
+          option(value="Eveline") Eveline
+          option(value="Relouis") Relouis
+          option(value="Vivienne") Vivienne Sabo
+        p
+          h2.cat_header_text.title_goods #{cat[0]['category']}
+        each val, index in goods
+          include card.pug
+        div #{cat[0]['description']} 
+
+    include nav.pug
+include footer.pug
+

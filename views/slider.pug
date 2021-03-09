@@ -1,0 +1,151 @@
+div(class='content_container container featured ')
+    div(class='row row_tags' id='taggggg')
+        div.col.col-lg-12
+            .tags.animated.flash
+                .tag_a
+                    a.a_a(href='estel', id='a_a', name='a_a') ESTEL
+                .tag_a
+                    a(href='kapous') KAPOUS
+                .tag_a
+                    a(href='ollin') OLLIN
+                .tag_a
+                    a(href='loreal') L`OREAL
+                .tag_a
+                    a(href='cd') CONSTANT DELIGHT
+                .tag_a
+                    a(href='belorus') БЕЛОРУССКАЯ КОСМЕТИКА
+                .tag_a
+                    a(href='korea') КОРЕЙСКАЯ КОСМЕТИКА
+                .tag_a
+                    a(href="relouis") RELOUIS
+                .tag_a
+                    a(href='palmolive') PALMOLIVE
+                .tag_a
+                    a(href='pantene') PANTENE
+                .tag_a
+                    a(href='pupa') PUPA
+                .tag_a
+                    a(href='schwarzkopf') SCHWARZKOPF
+                .tag_a
+                    a(href='syoss') SYOSS
+                .tag_a
+                    a(href='vivienne_sabo') VIVIENNE SABO
+                .tag_a
+                    a(href='wella') WELLA
+                .tag_a
+                    a(href='max_factor') MAX FACTOR
+                .tag_a
+                    a(href='maybelline') MAYBELLINE
+                .tag_a
+                    a(href='garnier') GARNIER
+                .tag_a
+                    a(href='lux_visage') LUX VISAGE
+                .tag_a
+                    a(href='eveline') EVELINE
+.search_form
+    form(action="/search", method='POST')
+        .search_block
+            //- label.search_name Поиск
+            input(name="keyword", class='input input-search', placeholder='Введите название товара')
+            button.searchButton(type='submit')
+                i.fa.fa-search
+            //- input(type="submit", value="Поиск", class='search_button')                   
+.flex-wrapper
+    .slider-wrapper
+        .slide.active
+            img(src='../images/slider/Slider_1.png', alt='', class='img_slider')
+        .slide
+            img(src='../images/slider/Slider_2.png', alt='', class='img_slider')
+        .slide
+            img(src='../images/slider/Slider_3.png', alt='', class='img_slider')
+        #btn-prev
+        #btn-next
+.dots-wrapper
+    span.dot.active
+    span.dot
+    span.dot
+
+div.box_prev
+    div.box_prev_pr
+        h1 Макияж
+            div.box_p
+                p
+                    a(href='') Глаза
+                p
+                    a(href='') Брови  
+                p
+                    a(href='') Лицо
+                p
+                    a(href='') Губы  
+    div.box_prev_pr
+        h1 Уход за лицом
+            div.box_p
+                p
+                    a(href='') Маски
+                p
+                    a(href='') Патчи  
+                p
+                    a(href='') Лосьоны
+                p
+                    a(href='') Скрабы  
+    div.box_prev_pr
+        h1 Уход за волосами
+            div.box_p
+                p
+                    a(href='') Шампуни
+                p
+                    a(href='') Бальзамы  
+                p
+                    a(href='') Маски
+                p
+                    a(href='') Сыворотки  
+                p
+                    a(href='') Средства для укладки
+                p
+                    a(href='') Окрашевание 
+                p
+                    a(href='') Оттеночные шампуни и бальзамы 
+    div.box_prev_pr
+        h1 Уход за телом
+            div.box_p
+                p
+                    a(href='') Гели для душа
+                p
+                    a(href='') Мыло  
+                p
+                    a(href='') Кремы
+                p
+                    a(href='') Скрабы и пилинги  
+                p
+                    a(href='') Дезодоранты
+                p
+                    a(href='') Депиляция 
+                p
+                    a(href='') Загар и защита от солнца 
+                p
+                    a(href='') Соль для ванны
+                p
+                    a(href='') Мочалки 
+                p
+                    a(href='') Пена для ванны
+    div.box_prev_pr
+        h1 Парфюмерия
+             div.box_p
+                p
+                    a(href='') Женская парюмерия
+                p
+                    a(href='') Мужская парфюмерия  
+                p
+                    a(href='') Детская парфюмерия
+                p
+                    a(href='') Подарочные наборы 
+    div.box_prev_pr
+        h1 Маникюр и педикюр
+             div.box_p
+                p
+                    a(href='') Антисептические средства
+                p
+                    a(href='') Гели-Лаки  
+                p
+                    a(href='') Инструменты
+script(src='/js/slider.js')

@@ -1,0 +1,35 @@
+include header
+input.btn_back(type="button" onclick='history.back();' value='НАЗАД')
+div(class='content_container mt-5 align-center')
+    h1 Добавление товара 
+        br
+        br
+        form(method='POST', class='')
+            label.label_name Сокращение
+          
+            input.field(name='slug')
+            br
+            br
+            label.label_name Название
+            input.field(name='name')
+            br
+            br
+            label.label_name Описание
+            input.field(name='description')
+            br
+            br
+            label.label_name Цена
+            input.field(name='cost')
+            br
+            br
+            label.label_name Категория
+            input.field(name='category')
+            br
+            br
+            label.label_name Наличие (0-нету, 1-есть)
+            input.field(name='availability')
+            br
+            br
+            div(class='d-flex justify-content-center')
+                input(type='submit', value='Отправить', class='button-primary button_create')
+            

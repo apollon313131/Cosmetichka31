@@ -1,0 +1,22 @@
+include header
+
+div(class='wrap')
+  div(class='content main')
+    header(class='site-header')
+      include site_header
+        
+    div(class='content_container container featured ')
+      div(class='row ')
+        div.col.col-lg-12
+          include slider
+        each val2, index2 in cat
+            div(class='col col-lg-12 title_goods ')
+                h2.title_goods_index  
+                    a(
+                        href='/cat?id='+val2['id']
+                    )   #{val2['category']}
+            each val, index in goods
+                if val2['id'] == val['category']
+                    include card.pug
+    include nav.pug
+include footer.pug
